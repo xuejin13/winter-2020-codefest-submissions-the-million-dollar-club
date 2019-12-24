@@ -1,9 +1,9 @@
 # Hunter CS Winter 2019 CodeFest
 
 # Team Info
-### Team name:
+### Team name: The Million Dollar Club
 ### Team members (format: GitHub username, last name, first name):
-- 
+- (xuejin13, Gao, Xuejin)
 - 
 - 
 -
