@@ -3,7 +3,7 @@
 # Team Info
 ### Team name: The Million Dollar Club
 ### Team members (format: GitHub username, last name, first name):
-- (xuejin13, Gao, Xuejin)
+- xuejin13, Gao, Xuejin
 - 
 - 
 -
