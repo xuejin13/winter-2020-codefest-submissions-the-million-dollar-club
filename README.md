@@ -5,7 +5,8 @@
 ### Team members (format: GitHub username, last name, first name):
 - xuejin13, Gao, Xuejin
 - erjiale, Qiu, Jiale (Jay)
-- , Chan, Steven
+- newdevon, Chan, Steven
+- , Joanne
 
 ### Group info (check all that apply - add an X in the [ ])
 - [ ] We are a CUNY2X bootcamp cohort team
