@@ -6,7 +6,7 @@
 - xuejin13, Gao, Xuejin
 - erjiale, Qiu, Jiale (Jay)
 - newdevon, Chan, Steven
-- , Joanne
+- joannef, Fung, Joanne
 
 ### Group info (check all that apply - add an X in the [ ])
 - [ ] We are a CUNY2X bootcamp cohort team
