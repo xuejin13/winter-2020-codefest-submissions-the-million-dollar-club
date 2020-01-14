@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9B7C7BA623CBC067000B00F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C7BA523CBC067000B00F2 /* AppDelegate.swift */; };
 		9B7C7BA823CBC067000B00F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C7BA723CBC067000B00F2 /* SceneDelegate.swift */; };
-		9B7C7BAA23CBC067000B00F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C7BA923CBC067000B00F2 /* ViewController.swift */; };
 		9B7C7BAD23CBC067000B00F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C7BAB23CBC067000B00F2 /* Main.storyboard */; };
 		9B7C7BAF23CBC06B000B00F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C7BAE23CBC06B000B00F2 /* Assets.xcassets */; };
 		9B7C7BB223CBC06B000B00F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C7BB023CBC06B000B00F2 /* LaunchScreen.storyboard */; };
 		9B7C7BBD23CBC06C000B00F2 /* PassionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C7BBC23CBC06C000B00F2 /* PassionTests.swift */; };
 		9B7C7BC823CBC06C000B00F2 /* PassionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C7BC723CBC06C000B00F2 /* PassionUITests.swift */; };
+		9B7C7BD623CBC4A8000B00F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C7BD523CBC4A8000B00F2 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		9B7C7BA223CBC067000B00F2 /* Passion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7C7BA523CBC067000B00F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B7C7BA723CBC067000B00F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B7C7BA923CBC067000B00F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9B7C7BAC23CBC067000B00F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B7C7BAE23CBC06B000B00F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B7C7BB123CBC06B000B00F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		9B7C7BC323CBC06C000B00F2 /* PassionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7C7BC723CBC06C000B00F2 /* PassionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassionUITests.swift; sourceTree = "<group>"; };
 		9B7C7BC923CBC06C000B00F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7C7BD523CBC4A8000B00F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 			children = (
 				9B7C7BA523CBC067000B00F2 /* AppDelegate.swift */,
 				9B7C7BA723CBC067000B00F2 /* SceneDelegate.swift */,
-				9B7C7BA923CBC067000B00F2 /* ViewController.swift */,
 				9B7C7BAB23CBC067000B00F2 /* Main.storyboard */,
 				9B7C7BAE23CBC06B000B00F2 /* Assets.xcassets */,
 				9B7C7BB023CBC06B000B00F2 /* LaunchScreen.storyboard */,
 				9B7C7BB323CBC06B000B00F2 /* Info.plist */,
+				9B7C7BD523CBC4A8000B00F2 /* LoginViewController.swift */,
 			);
 			path = Passion;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B7C7BAA23CBC067000B00F2 /* ViewController.swift in Sources */,
+				9B7C7BD623CBC4A8000B00F2 /* LoginViewController.swift in Sources */,
 				9B7C7BA623CBC067000B00F2 /* AppDelegate.swift in Sources */,
 				9B7C7BA823CBC067000B00F2 /* SceneDelegate.swift in Sources */,
 			);
