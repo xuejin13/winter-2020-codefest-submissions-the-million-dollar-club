@@ -89,11 +89,43 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="f1x-cA-0hH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yKq-Kd-epx"/>
+                    <navigationItem key="navigationItem" id="yKq-Kd-epx">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="2ji-5X-gTJ">
+                            <connections>
+                                <segue destination="ohD-zP-8VX" kind="presentation" id="YQ9-J8-hYr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tm5-rz-GsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="312" y="1499"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hSn-4W-xZx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ohD-zP-8VX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LtC-Ho-cOC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAj-LK-I2C">
+                                <rect key="frame" x="0.0" y="33" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Z0c-4v-dcA">
+                                        <barButtonItem key="leftBarButtonItem" title="Done" id="b8I-Q0-K6h"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="K0V-wj-PNG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oz9-ER-yD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="2234"/>
         </scene>
         <!--Home-->
         <scene sceneID="WtE-Q2-MSC">
@@ -178,4 +210,7 @@
             <point key="canvasLocation" x="1319" y="735"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="58"/>
+    </resources>
 </document>

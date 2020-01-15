@@ -30,4 +30,10 @@ Layout
     -User sees the workout layout, on right hand corner the add sign to create a workout list
     -As they finish and come back to original home screen, theres a start and next exercise.
     -timer shows estimated time finish. / after
-    -
+
+Progess
+    
+    []Layout
+    []User is able to log in/loggout
+    []User can select workouts
+    []
