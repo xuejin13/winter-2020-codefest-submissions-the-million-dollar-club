@@ -33,7 +33,7 @@ Layout
 
 Progess
     
-    []Layout
+    [x]Layout
     []User is able to log in/loggout
     []User can select workouts
-    []
+    []Creating parse login
