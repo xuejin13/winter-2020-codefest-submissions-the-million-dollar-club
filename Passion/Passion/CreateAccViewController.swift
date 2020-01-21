@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class CreateAccViewController: UIViewController {
 
@@ -21,7 +22,24 @@ class CreateAccViewController: UIViewController {
     }
     
     @IBAction func onCreateAccount(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
         
+        user.signUpInBackground { (success, error) in
+            if success {
+                print("Created new user")
+            }
+            else{
+                print("Error: \(error?.localizedDescription ?? "default value")")
+                
+            }
+        }
+        
+    }
+    
+    @IBAction func onCancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*
