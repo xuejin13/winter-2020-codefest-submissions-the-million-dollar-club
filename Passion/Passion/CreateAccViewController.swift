@@ -1,15 +1,14 @@
 //
-//  LoginViewController.swift
+//  CreateAccViewController.swift
 //  Passion
 //
-//  Created by Xuejin Gao on 1/12/20.
+//  Created by Xuejin Gao on 1/21/20.
 //  Copyright © 2020 Xuejin Gao. All rights reserved.
 //
 
 import UIKit
-import Parse
 
-class LoginViewController: UIViewController {
+class CreateAccViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -21,11 +20,10 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onSignIn(_ sender: Any) {
+    @IBAction func onCreateAccount(_ sender: Any) {
         
     }
     
-
     /*
     // MARK: - Navigation
 

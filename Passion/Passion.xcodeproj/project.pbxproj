@@ -19,6 +19,7 @@
 		9B7C7BC823CBC06C000B00F2 /* PassionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C7BC723CBC06C000B00F2 /* PassionUITests.swift */; };
 		9B7C7BD623CBC4A8000B00F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C7BD523CBC4A8000B00F2 /* LoginViewController.swift */; };
 		9BEF171E23D6BD4500632110 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF171D23D6BD4500632110 /* FeedViewController.swift */; };
+		9BEF172023D6C31800632110 /* CreateAccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF171F23D6C31800632110 /* CreateAccViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9B7C7BC923CBC06C000B00F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B7C7BD523CBC4A8000B00F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BEF171D23D6BD4500632110 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9BEF171F23D6C31800632110 /* CreateAccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccViewController.swift; sourceTree = "<group>"; };
 		A00AC2E7CAFE79AC8DF02EEA /* Pods_Passion_PassionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passion_PassionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE949153D904670DCBF28F8B /* Pods-Passion-PassionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passion-PassionUITests.release.xcconfig"; path = "Target Support Files/Pods-Passion-PassionUITests/Pods-Passion-PassionUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 				9B7C7BB323CBC06B000B00F2 /* Info.plist */,
 				9B7C7BD523CBC4A8000B00F2 /* LoginViewController.swift */,
 				9BEF171D23D6BD4500632110 /* FeedViewController.swift */,
+				9BEF171F23D6C31800632110 /* CreateAccViewController.swift */,
 			);
 			path = Passion;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				9B7C7BA623CBC067000B00F2 /* AppDelegate.swift in Sources */,
 				9BEF171E23D6BD4500632110 /* FeedViewController.swift in Sources */,
 				9B7C7BA823CBC067000B00F2 /* SceneDelegate.swift in Sources */,
+				9BEF172023D6C31800632110 /* CreateAccViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
