@@ -32,6 +32,7 @@ class CreateAccViewController: UIViewController {
             }
             else{
                 print("Error: \(error?.localizedDescription ?? "default value")")
+                
             }
         }
         

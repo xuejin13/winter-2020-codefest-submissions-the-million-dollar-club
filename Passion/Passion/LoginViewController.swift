@@ -22,9 +22,20 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignIn(_ sender: Any) {
-        let username = usernameField.text
-        let password = passwordField.text
+        let username = usernameField.text!
+        let password = passwordField.text!
         
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil {
+                //perform segue
+                print("Success in logging in")
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else{
+                print("Error: \(error?.localizedDescription ?? "default value")")
+            }
+        }
     }
     
 
@@ -37,5 +48,6 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
 }
