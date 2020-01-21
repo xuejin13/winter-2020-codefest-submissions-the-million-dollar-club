@@ -137,7 +137,11 @@
                         <viewLayoutGuide key="safeArea" id="8Qz-8w-2xK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Account" id="OB1-e5-F5d">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Oo2-Cr-STH"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Oo2-Cr-STH">
+                            <connections>
+                                <action selector="onCancel:" destination="9R6-JW-WWh" id="wqC-gl-Amn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="passwordField" destination="sB0-c1-3R8" id="JZW-iY-TSx"/>
