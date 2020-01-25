@@ -29,6 +29,7 @@ class CreateAccViewController: UIViewController {
         user.signUpInBackground { (success, error) in
             if success {
                 print("Created new user")
+                self.dismiss(animated: true, completion: nil)
             }
             else{
                 print("Error: \(error?.localizedDescription ?? "default value")")

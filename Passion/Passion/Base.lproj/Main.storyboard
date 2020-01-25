@@ -302,21 +302,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hey " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVm-Ur-kLm">
-                                <rect key="frame" x="52" y="120" width="35" height="21"/>
+                                <rect key="frame" x="48" y="129" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-F2-gjd">
-                                <rect key="frame" x="95" y="120" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0j-Dp-mL0">
-                                <rect key="frame" x="48" y="192" width="139" height="21"/>
+                                <rect key="frame" x="91" y="129" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -326,12 +319,35 @@
                                 <rect key="frame" x="20" y="245" width="374" height="651"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="232" id="JTK-Ta-fl1">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="232"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JTK-Ta-fl1" id="oNq-Tf-CfD">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="232"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Personal Progress :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0j-Dp-mL0">
+                                <rect key="frame" x="48" y="171" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PZe-nM-dEK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Personal" id="iiY-5Y-WkG"/>
+                    <navigationItem key="navigationItem" title="Personal" id="iiY-5Y-WkG">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="photo.on.rectangle" catalog="system" id="off-Ba-cqP">
+                            <connections>
+                                <segue destination="f9d-Of-cEm" kind="presentation" id="KY8-Hr-y7S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameField" destination="hkq-F2-gjd" id="46W-1c-wGb"/>
                     </connections>
@@ -339,6 +355,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ua-0F-9V1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2315.9420289855075" y="1498.6607142857142"/>
+        </scene>
+        <!--Upload Picture View Controller-->
+        <scene sceneID="HMN-tD-N7Z">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="f9d-Of-cEm" customClass="UploadPictureViewController" customModule="Passion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Jf-rz-EMr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gjp-oS-8j8">
+                                <rect key="frame" x="35" y="116" width="344" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Gqr-mI-R93" appends="YES" id="Aj0-XJ-q07"/>
+                                </connections>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lBX-wL-7li">
+                                <rect key="frame" x="0.0" y="34" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Upload" id="gIi-w7-sAe">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="xpM-bO-76e">
+                                            <connections>
+                                                <action selector="onCancel:" destination="f9d-Of-cEm" id="08b-FZ-3oe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Post" id="iTQ-Hr-wXn">
+                                            <connections>
+                                                <action selector="onPost:" destination="f9d-Of-cEm" id="bmf-Pa-zEQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caption: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFK-Mj-OwH">
+                                <rect key="frame" x="35" y="431" width="69" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWd-ay-Rfi">
+                                <rect key="frame" x="35" y="473" width="344" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aiL-6B-R0g"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentField" destination="uWd-ay-Rfi" id="r6c-oG-nMx"/>
+                        <outlet property="imageView" destination="Gjp-oS-8j8" id="3US-7C-tqF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzd-Ml-8to" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gqr-mI-R93">
+                    <connections>
+                        <action selector="onTapPhoto:" destination="f9d-Of-cEm" id="JVV-H2-l5c"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2315.9420289855075" y="2205.1339285714284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iiy-zK-oRG">
@@ -380,6 +461,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="64" height="48"/>
+        <image name="photo.on.rectangle" catalog="system" width="64" height="48"/>
         <image name="plus" catalog="system" width="64" height="58"/>
     </resources>
 </document>
