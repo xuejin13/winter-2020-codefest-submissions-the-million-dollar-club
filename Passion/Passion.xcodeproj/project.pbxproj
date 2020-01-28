@@ -21,6 +21,7 @@
 		9BEF171E23D6BD4500632110 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF171D23D6BD4500632110 /* FeedViewController.swift */; };
 		9BEF172023D6C31800632110 /* CreateAccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF171F23D6C31800632110 /* CreateAccViewController.swift */; };
 		9BEF172223D6D2B000632110 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF172123D6D2B000632110 /* PersonalViewController.swift */; };
+		9BEF172423D95A6D00632110 /* UploadPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF172323D95A6D00632110 /* UploadPictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		9BEF171D23D6BD4500632110 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		9BEF171F23D6C31800632110 /* CreateAccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccViewController.swift; sourceTree = "<group>"; };
 		9BEF172123D6D2B000632110 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		9BEF172323D95A6D00632110 /* UploadPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPictureViewController.swift; sourceTree = "<group>"; };
 		A00AC2E7CAFE79AC8DF02EEA /* Pods_Passion_PassionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passion_PassionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE949153D904670DCBF28F8B /* Pods-Passion-PassionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passion-PassionUITests.release.xcconfig"; path = "Target Support Files/Pods-Passion-PassionUITests/Pods-Passion-PassionUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				9BEF171D23D6BD4500632110 /* FeedViewController.swift */,
 				9BEF171F23D6C31800632110 /* CreateAccViewController.swift */,
 				9BEF172123D6D2B000632110 /* PersonalViewController.swift */,
+				9BEF172323D95A6D00632110 /* UploadPictureViewController.swift */,
 			);
 			path = Passion;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BEF172423D95A6D00632110 /* UploadPictureViewController.swift in Sources */,
 				9B7C7BD623CBC4A8000B00F2 /* LoginViewController.swift in Sources */,
 				9B7C7BA623CBC067000B00F2 /* AppDelegate.swift in Sources */,
 				9BEF171E23D6BD4500632110 /* FeedViewController.swift in Sources */,
