@@ -9,6 +9,7 @@
 import UIKit
 
 import AlamofireImage
+import Parse
 
 class UploadPictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -56,7 +57,31 @@ class UploadPictureViewController: UIViewController, UIImagePickerControllerDele
     }
     
     @IBAction func onPost(_ sender: Any) {
+        
         print("Post clicked")
+        
+        let post = PFObject(className: "Post")
+        post["author"] = PFUser.current()
+        post["caption"] = commentField.text
+        
+        let date = Date().description
+        let index = date.index(date.startIndex, offsetBy: 10)
+        let dateSubstr = date.prefix(upTo: index)
+        post["date"] = dateSubstr
+        
+        let imageData = imageView.image?.pngData()
+        let file = PFFileObject(data: imageData!)
+        post["image"] = file
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                print("Post saved")
+                self.dismiss(animated: true, completion: nil)
+            }
+            else{
+                print("Error in saving the post")
+            }
+        }
     }
     
     
