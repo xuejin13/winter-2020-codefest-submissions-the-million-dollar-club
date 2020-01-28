@@ -60,7 +60,7 @@ class UploadPictureViewController: UIViewController, UIImagePickerControllerDele
         
         print("Post clicked")
         
-        let post = PFObject(className: "Personal Post")
+        let post = PFObject(className: "PersonalPost")
         post["author"] = PFUser.current()
         post["caption"] = commentField.text
         
