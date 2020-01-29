@@ -22,6 +22,8 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        DataRequest.addAcceptableImageContentTypes(["application/octet-stream"])
+        
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
@@ -30,6 +32,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         nameField.text = user?.username
         
     }
+    
     
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
@@ -40,15 +43,13 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
         delegate.window?.rootViewController = loginViewController
     }
-    
-<<<<<<< HEAD
-=======
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "PersonalPost")
         
-//        query.whereKey("author", equalTo: PFUser.current()!)
+        query.whereKey("author", equalTo: PFUser.current()!)
         query.includeKey("author")
         query.limit = 20
         
@@ -66,6 +67,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         return posts.count
     }
     
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalPostCell") as! PersonalCellTableViewCell
         
@@ -88,7 +90,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
->>>>>>> 36b732e66e9a8a8ce976ec95442baa5695984756
+
     
     /*
     // MARK: - Navigation
