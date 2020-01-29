@@ -31,7 +31,7 @@ class PersonalViewController: UIViewController {
         delegate.window?.rootViewController = loginViewController
     }
     
-
+    
     /*
     // MARK: - Navigation
 
