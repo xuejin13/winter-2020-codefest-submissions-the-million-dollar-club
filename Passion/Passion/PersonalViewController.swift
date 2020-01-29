@@ -86,6 +86,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
+
     
     /*
     // MARK: - Navigation
