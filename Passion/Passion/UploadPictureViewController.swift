@@ -45,7 +45,8 @@ class UploadPictureViewController: UIViewController, UIImagePickerControllerDele
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af_imageScaled(to: size)
+        let scaledImage = image.af_imageAspectScaled(toFill: size)
+//        let scaledImage = image.af_imageScaled(to: size)
 
         imageView.image = scaledImage
         
@@ -69,7 +70,7 @@ class UploadPictureViewController: UIViewController, UIImagePickerControllerDele
         let dateSubstr = date.prefix(upTo: index)
         post["date"] = dateSubstr
         
-        let imageData = imageView.image?.pngData()
+        let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
         post["image"] = file
         
