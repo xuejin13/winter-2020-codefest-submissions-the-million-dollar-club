@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -174,7 +174,7 @@
                     <navigationItem key="navigationItem" title="Workout" id="yKq-Kd-epx">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="2ji-5X-gTJ">
                             <connections>
-                                <segue destination="ohD-zP-8VX" kind="presentation" id="YQ9-J8-hYr"/>
+                                <segue destination="ohD-zP-8VX" kind="presentation" id="rdH-ID-aXq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -216,7 +216,7 @@
                                 <rect key="frame" x="0.0" y="172" width="414" height="690"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ExerciseCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SelectedExerciseCell" textLabel="k6N-0V-hXA" rowHeight="64" style="IBUITableViewCellStyleDefault" id="Upk-hV-2H4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ExerciseCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExerciseCell" textLabel="k6N-0V-hXA" rowHeight="64" style="IBUITableViewCellStyleDefault" id="Upk-hV-2H4">
                                         <rect key="frame" x="0.0" y="28" width="414" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Upk-hV-2H4" id="ltQ-pF-iiQ">
@@ -239,7 +239,7 @@
                                     <outlet property="delegate" destination="ohD-zP-8VX" id="aSh-O2-F06"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercises" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-WM-5yW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-WM-5yW">
                                 <rect key="frame" x="0.0" y="133" width="414" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="IJM-2d-Xmk"/>
@@ -268,6 +268,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K0V-wj-PNG"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="U01-63-Q8a" id="2Z6-MY-FEj"/>
+                        <outlet property="tbView" destination="Shp-2A-jlT" id="ldC-MC-oNb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oz9-ER-yD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
