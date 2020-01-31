@@ -52,6 +52,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         query.whereKey("author", equalTo: PFUser.current()!)
         query.includeKey("author")
         query.limit = 20
+        query.addDescendingOrder("createdAt")
         
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {

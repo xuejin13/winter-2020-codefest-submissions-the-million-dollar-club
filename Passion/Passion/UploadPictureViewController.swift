@@ -21,6 +21,17 @@ class UploadPictureViewController: UIViewController, UIImagePickerControllerDele
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+            //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+            //tap.cancelsTouchesInView = false
+
+            view.addGestureRecognizer(tap)
+    }
+        
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBAction func onTapPhoto(_ sender: Any) {
@@ -30,12 +41,14 @@ class UploadPictureViewController: UIViewController, UIImagePickerControllerDele
         
         print("Camera tapped")
         
-        if UIImagePickerController.isSourceTypeAvailable(.camera){
-            picker.sourceType = .camera
-        }
-        else{
-            picker.sourceType = .photoLibrary
-        }
+//        if UIImagePickerController.isSourceTypeAvailable(.camera){
+//            picker.sourceType = .camera
+//        }
+//        else{
+//            picker.sourceType = .photoLibrary
+//        }
+        
+        picker.sourceType = .photoLibrary
         
         present(picker, animated: true, completion: nil)
     }

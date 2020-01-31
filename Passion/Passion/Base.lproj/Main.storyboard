@@ -407,17 +407,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="The-wG-1zy">
-                                <rect key="frame" x="0.0" y="244" width="414" height="651"/>
+                                <rect key="frame" x="0.0" y="244" width="414" height="446"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="651" id="iTe-KF-sAs"/>
+                                    <constraint firstAttribute="height" constant="446" id="iTe-KF-sAs"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalPostCell" rowHeight="485" id="JTK-Ta-fl1" customClass="PersonalCellTableViewCell" customModule="Passion" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="485"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalPostCell" rowHeight="411" id="JTK-Ta-fl1" customClass="PersonalCellTableViewCell" customModule="Passion" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="411"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JTK-Ta-fl1" id="oNq-Tf-CfD">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="485"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="411"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sme-Gc-0If">
