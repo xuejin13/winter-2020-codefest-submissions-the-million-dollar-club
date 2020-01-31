@@ -23,6 +23,7 @@
 		9BEF172223D6D2B000632110 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF172123D6D2B000632110 /* PersonalViewController.swift */; };
 		9BEF172423D95A6D00632110 /* UploadPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF172323D95A6D00632110 /* UploadPictureViewController.swift */; };
 		9BEF172623E1053A00632110 /* PersonalCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF172523E1053A00632110 /* PersonalCellTableViewCell.swift */; };
+		9BEF172823E20DDC00632110 /* SelectExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF172723E20DDC00632110 /* SelectExerciseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		9BEF172123D6D2B000632110 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		9BEF172323D95A6D00632110 /* UploadPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPictureViewController.swift; sourceTree = "<group>"; };
 		9BEF172523E1053A00632110 /* PersonalCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCellTableViewCell.swift; sourceTree = "<group>"; };
+		9BEF172723E20DDC00632110 /* SelectExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectExerciseViewController.swift; sourceTree = "<group>"; };
 		A00AC2E7CAFE79AC8DF02EEA /* Pods_Passion_PassionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passion_PassionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE949153D904670DCBF28F8B /* Pods-Passion-PassionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passion-PassionUITests.release.xcconfig"; path = "Target Support Files/Pods-Passion-PassionUITests/Pods-Passion-PassionUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 				9BEF172123D6D2B000632110 /* PersonalViewController.swift */,
 				9BEF172323D95A6D00632110 /* UploadPictureViewController.swift */,
 				9BEF172523E1053A00632110 /* PersonalCellTableViewCell.swift */,
+				9BEF172723E20DDC00632110 /* SelectExerciseViewController.swift */,
 			);
 			path = Passion;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				9BEF172623E1053A00632110 /* PersonalCellTableViewCell.swift in Sources */,
 				9B7C7BD623CBC4A8000B00F2 /* LoginViewController.swift in Sources */,
 				9B7C7BA623CBC067000B00F2 /* AppDelegate.swift in Sources */,
+				9BEF172823E20DDC00632110 /* SelectExerciseViewController.swift in Sources */,
 				9BEF171E23D6BD4500632110 /* FeedViewController.swift in Sources */,
 				9B7C7BA823CBC067000B00F2 /* SceneDelegate.swift in Sources */,
 				9BEF172223D6D2B000632110 /* PersonalViewController.swift in Sources */,
@@ -604,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WY596M578;
 				INFOPLIST_FILE = Passion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,6 +627,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WY596M578;
 				INFOPLIST_FILE = Passion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
